@@ -34,3 +34,6 @@ class State:
         a = math.sin(0.5 * (lat2 - lat1)) ** 2 + math.cos(lat1) * math.cos(lat2) * math.sin(0.5 * (lon2 - lon1)) ** 2
         c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
         return decimal.Decimal(R * c)
+
+    def getDesita(self):
+        return self.Population / self.Area
